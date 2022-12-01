@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header__nav__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav__list__item{
+    padding: 10px;
+    margin: 10px;
+}
