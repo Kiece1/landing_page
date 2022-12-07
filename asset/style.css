@@ -1,17 +1,454 @@
+:root {
+  --width-logo: 60px;
+  --width-logo-before: 80px;
+  --width-logo-after: 50px;
+  --width-folio: 400px;
+  --width-cards: 600px;
+  --gray: #6c757d;
+  --purple: #6f42c1;
+  --font-family-sans-serif: "Glory", sans-serif;
+  --font-family-monospace: "Liberation Mono", "Courier New", monospace;
+  --font-family-title: "Capriola", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: var(--font-family-sans-serif);
 }
 
-.header__nav__list{
-    display: flex;
-    flex-direction: row;
+.main h2 {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-sans-serif);
+  font-size: 3em;
+  font-family: var(--font-family-title);
+  background: var(--purple);
+  color: whitesmoke;
 }
 
-.header__nav__list__item{
-    padding: 10px;
-    margin: 10px;
+.container__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("asset/header.jpg");
+  align-items: center;
+  font-size: 1.2em;
+  gap: 300px;
+  height: 100px;
+}
+
+.container__header__menu {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container__header__nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container__header__nav__list__item {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container__banner {
+  display: flex;
+  flex-direction: column;
+  background: rgb(152, 175, 245);
+  height: 300px;
+}
+
+.container__banner__title {
+  padding: 30px 10px 10px 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-sans-serif);
+}
+
+.container__banner__buton {
+  align-items: center;
+}
+
+.container__banner button {
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: aliceblue;
+  background: var(--purple);
+}
+
+/* ------------------------------- */
+/* DESCRIPTION + PHOTO + BOUTON CV */
+/* ------------------------------- */
+
+.main__description {
+  margin: 70px 0 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main__description__paragraph h2 {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  font-family: var(--font-family-title);
+  color: var(--purple);
+  background: white;
+}
+
+.main__description__paragraph p {
+  justify-content: left;
+  text-align: justify;
+  width: 500px;
+}
+
+.main__description__paragraph button {
+  margin: 20px 0px 20px 0px;
+  padding: 10px;
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  color: var(--purple);
+}
+
+/* ----------------------------------------------------- */
+/*  PREMIERE "CARDS" UTILISEE : SERVICE ---------------- */
+/* ----------------------------------------------------- */
+
+.main__cards {
+  margin: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main__card {
+  margin: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-sans-serif);
+}
+
+.main__cards__item {
+  border: 1px solid black;
+}
+
+.main__cards__item__content {
+  transform: translateY(25%);
+  transition: all 1s ease;
+}
+
+.main__cards__item:hover .main__cards__item__content {
+  transform: translateY(0%);
+}
+
+.main__cards__item__title {
+  padding: 10px;
+}
+
+.main__cards__item__paragraph {
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  color: transparent;
+  transition-delay: 400ms;
+}
+
+.main__cards__item:hover .main__cards__item__paragraph {
+  color: black;
+}
+
+.main__cards__item__logo {
+  width: var(--width-logo-before);
+}
+
+.main__cards__item:hover .main__cards__item__logo {
+  width: var(--width-logo-after);
+}
+
+.main__cards__item__title {
+  color: var(--purple);
+}
+
+/* ----------------------------------------------------- */
+/* DEUXIEME "CARDS" UTILISEE : PORTFOLIO --------------- */
+/* ----------------------------------------------------- */
+
+.main__cards2 {
+  margin: 70px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main__cards2__item {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main__cards2__item__photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  z-index: -1;
+}
+/*
+.main__cards2__item:hover {
+  transform: translateY(-5px);
+}*/
+
+#idcontent1 {
+  background-image: url("/asset/folio-1.jpg");
+}
+
+#idcontent2 {
+  background-image: url("/asset/folio-2.jpg");
+}
+
+#idcontent3 {
+  background-image: url("/asset/folio-3.jpg");
+}
+
+.main__cards2__item__content {
+  padding: 10px;
+  text-align: center;
+  justify-content: left;
+  width: 300px;
+}
+
+/* .main__cards2__item__content:hover {
+  /* transform: scale(0.3); 
+  color: black;
+}
+
+.main__cards2__item__content:hover h3 {
+  text-align: center;
+  color: var(--purple);
+}*/
+
+.main__cards2__item__content h3 {
+  transform: translateY(-170px);
+}
+
+.main__cards2__item__paragraph {
+  transform: translateY(-170px);
+}
+
+/* --------------------------------------------------- */
+/* TROISIEME "CARDS" UTILISEE : TARIF ---------------- */
+/* --------------------------------------------------- */
+
+.main__cards3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.main__card3 {
+  margin: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-sans-serif);
+  height: var(--width-cards);
+}
+
+.main__card3:hover {
+  transform: translateY(-5px);
+}
+
+.main__cards3__item {
+  padding: 20px 0px;
+  display: flex;
+  border: 0.5px solid var(--gray);
+}
+
+.main__cards3__item__title {
+  padding: 20px 10px 10px 10px;
+}
+
+.main__cards3__item__list {
+  line-height: 2em;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+}
+
+.main__cards3__item__logo {
+  z-index: -1;
+  width: var(--width-folio);
+}
+
+.main__cards3__item__content__paragraph p {
+  width: 200px;
+  line-height: 1em;
+  text-align: center;
+}
+
+.main__cards3__item__title {
+  font-size: 2em;
+  text-align: center;
+  color: var(--purple);
+}
+
+.main__cards3__item__button {
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  background: var(--purple);
+  color: aliceblue;
+}
+
+.main__cards3__item__list strong {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 2.7em;
+  font-family: var(--font-family-monospace);
+}
+
+/* --------------------------------------------------- */
+/* QUATRIEME CARDS: TEMOIGNAGE ------------------------*/
+/* --------------------------------------------------- */
+
+.main__cards4 {
+  margin: 70px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+
+.main__cards4__item__content {
+  /* margin: 10px 10px 30px 10px;*/
+  padding: 30px;
+  width: 500px;
+  text-align: justify;
+  border: 1px solid black;
+}
+
+.main__cards4__item__content__photo1 #idPhotoTemoin1 {
+  width: 90px;
+  left: 6%;
+  position: absolute;
+}
+
+.main__cards4__item__content__photo2 #idPhotoTemoin2 {
+  width: 90px;
+  left: calc(6% + 600px);
+  position: absolute;
+}
+
+.NomTemoin {
+  color: var(--purple);
+}
+
+/* --------------------------------------------------- */
+/* CINQUIEME CARDS: BLOG ------------------------------*/
+/* --------------------------------------------------- */
+
+.main__cards5 {
+  margin: 70px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__cards5__item__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__cards5__item__content h3 {
+  margin-right: 20px;
+}
+
+.main__cards5__item__content__photo img {
+  width: 400px;
+}
+
+.main__cards5__item__title {
+  color: var(--purple);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.main__cards5__item__content__paragraph {
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: justify;
+  width: 600px;
+}
+
+/* ------------------------------- */
+/* FOOTER : CONTACT ---------------- */
+/* ------------------------------- */
+
+.footer__form {
+  padding: 30px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.footer__form__first input {
+  padding: 10px;
+  margin: 10px;
+  width: 490px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.footer__form__second input {
+  padding: 10px;
+  margin: 10px;
+  width: 1005px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.footer__form input::placeholder {
+  font-size: 1.7em;
+}
+
+.footer__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__button button {
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.3em;
+}
+
+.copyright {
+  height: 200px;
 }

@@ -5,20 +5,389 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset\style.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Capriola&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title></title>
   </head>
   <body>
-    <div class="header">
-      <nav class="header__nav header">
-        <ul class="header__nav__list">
-          <li class="header__nav__list__item">Home</li>
-          <li class="header__nav__list__item">Jeux</li>
-          <li class="header__nav__list__item">Applications</li>
-          <li class="header__nav__list__item">Films</li>
-          <li class="header__nav__list__item">Livres</li>
-          <li class="header__nav__list__item">Enfants</li>
-        </ul>
-      </nav>
+    <!----------------------------------------------------------->
+    <!-- CONTAINER : EN-TETE avec MENU + PRESENTATION et PHOTO -->
+    <!----------------------------------------------------------->
+
+    <div class="container">
+      <div class="container__header">
+        <div class="container__header__menu"><p>Kiece</p></div>
+        <nav class="container__header__nav">
+          <ul class="container__header__nav__list">
+            <li class="container__header__nav__list__item">Home</li>
+            <li class="container__header__nav__list__item">About</li>
+            <li class="container__header__nav__list__item">Portfolio</li>
+            <li class="container__header__nav__list__item">Testmonial</li>
+            <li class="container__header__nav__list__item">Blog</li>
+            <li class="container__header__nav__list__item">Contact</li>
+            <li
+              class="container__header__nav__list__item"
+              style="background: var(--purple); color: whitesmoke"
+            >
+              Components
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container__banner">
+        <div class="container__banner__title container__banner">
+          <h1>
+            Salut !<br />
+            Je suis Kiece<br />
+            <span>FullStack Web Designer</span>
+          </h1>
+        </div>
+        <div class="container__banner__buton container__banner">
+          <button>Voici mon travail !</button>
+        </div>
+      </div>
     </div>
+
+    <!----------------------------------------->
+    <!-- DESCRIPTION et PHOTO ----------------->
+    <!----------------------------------------->
+
+    <div class="main__description">
+      <div class="main__description__photo">
+        <img src="asset\man.png" width="300px" />
+      </div>
+      <div class="main__description__paragraph">
+        <p>Qui suis-je ?</p>
+        <h2>A Propos de Moi</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          aliquid ad provident aut fuga animi soluta quae eos non cupiditate
+          voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo
+          a iste culpa! Quasi quibusdam hic recusandae delectus velit officiis
+          explicabo voluptatibus! Nemo esse similique, voluptates labore
+          distinctio, placeat explicabo facilis molestias, blanditiis culpa
+          iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa
+          sint ex voluptatum expedita aliquid! Debitis, nam!
+        </p>
+        <a href="#"><button>Telecharger CV</button></a>
+      </div>
+    </div>
+
+    <!----------------------------------------->
+    <!-- PREMIERE "CARDS" UTILISEE : SERVICE -->
+    <!----------------------------------------->
+
+    <div class="main">
+      <h2>Service</h2>
+      <div class="main__cards">
+        <div class="main__cards__item main__card">
+          <div class="main__cards__item__content main__card">
+            <img class="main__cards__item__logo" src="asset\service-1.svg" />
+            <h3 class="main__cards__item__title">Labore</h3>
+            <p class="main__cards__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+        <div class="main__cards__item main__card">
+          <div class="main__cards__item__content main__card">
+            <img class="main__cards__item__logo" src="asset\service-2.svg" />
+            <h3 class="main__cards__item__title">Labore</h3>
+            <p class="main__cards__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+        <div class="main__cards__item main__card">
+          <div class="main__cards__item__content main__card">
+            <img class="main__cards__item__logo" src="asset\service-3.svg" />
+            <h3 class="main__cards__item__title">Labore</h3>
+            <p class="main__cards__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+        <div class="main__cards__item main__card">
+          <div class="main__cards__item__content main__card">
+            <img class="main__cards__item__logo" src="asset\service-4.svg" />
+            <h3 class="main__cards__item__title">Labore</h3>
+            <p class="main__cards__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------->
+      <!-- DEUXIEME "CARDS" UTILISEE : PORTFOLIO -->
+      <!------------------------------------------->
+
+      <h2>Portfolio</h2>
+      <div class="main__cards2">
+        <div id="idcontent1" class="main__cards2__item">
+          <div class="main__cards2__item__content">
+            <img
+              class="main__cards2__item__photo"
+              src="asset\folio-1.jpg"
+              width="300px"
+              style="visibility: hidden"
+            />
+            <h3>Web Designing</h3>
+            <p class="main__cards2__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+        <div id="idcontent2" class="main__cards2__item">
+          <div class="main__cards2__item__content">
+            <img
+              class="main__cards2__item__photo"
+              src="asset\folio-2.jpg"
+              width="300px"
+              style="visibility: hidden"
+            />
+            <h3>Web Designing</h3>
+            <p class="main__cards2__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+        <div id="idcontent3" class="main__cards2__item">
+          <div class="main__cards2__item__content">
+            <img
+              class="main__cards2__item__photo"
+              src="asset\folio-3.jpg"
+              width="300px"
+              style="visibility: hidden"
+            />
+            <h3>Web Designing</h3>
+            <p class="main__cards2__item__paragraph">
+              Labore velit culpa adipisci excepturi consequuntur itaque in nam
+              molestias dolorem iste quod.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------------->
+      <!-- TROISIEME "CARDS" UTILISEE : TARIF -->
+      <!---------------------------------------->
+
+      <h2>Tarif</h2>
+      <div class="main__cards3">
+        <div class="main__cards3__item main__card3">
+          <img class="main__cards__item__logo" src="asset\scooter.svg" />
+          <h3 class="main__cards3__item__title">Labore</h3>
+          <ul class="main__cards3__item__list">
+            <li>accusamus reprehenderit</li>
+            <li>provident dolorem</li>
+            <li>quos neque</li>
+            <li>fugiat quibusdam</li>
+            <li><img src="asset\red_cross.png" width="15px" /></li>
+            <li><img src="asset\red_cross.png" width="15px" /></li>
+            <li>
+              <strong class="main__cards3__item__list">$0.00/Month</strong>
+            </li>
+          </ul>
+          <button class="main__cards3__item__button">Payez-Moi !</button>
+        </div>
+        <div class="main__cards3__item main__card3">
+          <img class="main__cards__item__logo" src="asset\shipped.svg" />
+          <h3 class="main__cards3__item__title">Labore</h3>
+          <ul class="main__cards3__item__list">
+            <li>accusamus reprehenderit</li>
+            <li>provident dolorem</li>
+            <li>quos neque</li>
+            <li>fugiat quibusdam</li>
+            <li>accusamus laboriosam</li>
+            <li><img src="asset\red_cross.png" width="15px" /></li>
+            <li>
+              <strong class="main__cards3__item__list">$49.99/Month</strong>
+            </li>
+          </ul>
+          <button class="main__cards3__item__button">Payez-Moi !</button>
+        </div>
+        <div class="main__cards3__item main__card3">
+          <img class="main__cards__item__logo" src="asset\startup.svg" />
+          <h3 class="main__cards3__item__title">Labore</h3>
+          <ul class="main__cards3__item__list">
+            <li>accusamus reprehenderit</li>
+            <li>provident dolorem</li>
+            <li>quos neque</li>
+            <li>fugiat quibusdam</li>
+            <li>accusamus laboriosam</li>
+            <li>inventore omnis></li>
+            <li>
+              <strong class="main__cards3__item__list">$149.99/Month</strong>
+            </li>
+          </ul>
+          <button class="main__cards3__item__button">Payez-Moi !</button>
+        </div>
+      </div>
+      <!------------------------------------------------------------------>
+      <!-- QUATRIEME CARDS: TEMOIGNAGE ----------------------------------->
+      <!------------------------------------------------------------------>
+
+      <h2>Témoignage</h2>
+      <div class="main__cards4">
+        <div class="main__cards4__item__content">
+          <div class="main__cards4__item__content__photo1">
+            <img id="idPhotoTemoin1" src="asset\temoin1.jpg" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+              doloribus autem aperiam earum nostrum omnis blanditiis corporis
+              perspiciatis adipisci nihil. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Eaque doloribus autem aperiam earum
+              nostrum omnis blanditiis corporis perspiciatis adipisci nihil.
+            </p>
+            <p class="NomTemoin">E.M.</p>
+          </div>
+        </div>
+        <div class="main__cards4__item__content">
+          <div class="main__cards4__item__content__photo2">
+            <img id="idPhotoTemoin2" src="asset\temoin2.jpg" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+              doloribus autem aperiam earum nostrum omnis blanditiis corporis
+              perspiciatis adipisci nihil. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Eaque doloribus autem aperiam earum
+              nostrum omnis blanditiis corporis perspiciatis adipisci nihil.
+            </p>
+            <p class="NomTemoin">E.M.</p>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------------------------------->
+      <!-- CINQUIEME CARDS: BLOG --------------------------------->
+      <!---------------------------------------------------------->
+
+      <h2>Blog</h2>
+      <div class="main__cards5">
+        <div class="main__cards__item main__card">
+          <div class="main__cards5__item__content main__card">
+            <div class="main__cards5__item__content__photo">
+              <img src="asset\img-1.jpg" />
+            </div>
+            <div>
+              <h3 class="main__cards5__item__title">Excepturi laborum enim</h3>
+              <p class="main__cards5__item__content__paragraph">By Admin</p>
+              <p class="main__cards5__item__content__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto
+                consequuntur voluptas, esse doloribus. Perferendis porro
+                quisquam vitae exercitationem aliquid, minus eos laborum
+                repudiandae, cumque debitis iusto omnis praesentium? Laborum
+                placeat sit adipisci illum tempore maxime, esse qui quae?
+                Molestias excepturi corporis similique doloribus. Esse vitae
+                earum architecto nulla non dolores illum at perspiciatis quod,
+                et deleniti cupiditate reiciendis harum facere, delectus eum
+                commodi soluta distinctio sit repudiandae possimus sunt. Ipsum,
+                rem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main__cards__item main__card">
+          <div class="main__cards5__item__content main__card">
+            <div class="main__cards5__item__content__photo">
+              <img src="asset\img-2.jpg" />
+            </div>
+            <div>
+              <h3 class="main__cards5__item__title">
+                Perferendis porro quisquam
+              </h3>
+              <p class="main__cards5__item__content__paragraph">By Admin</p>
+              <p class="main__cards5__item__content__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto
+                consequuntur voluptas, esse doloribus. Perferendis porro
+                quisquam vitae exercitationem aliquid, minus eos laborum
+                repudiandae, cumque debitis iusto omnis praesentium? Laborum
+                placeat sit adipisci illum tempore maxime, esse qui quae?
+                Molestias excepturi corporis similique doloribus. Esse vitae
+                earum architecto nulla non dolores illum at perspiciatis quod,
+                et deleniti cupiditate reiciendis harum facere, delectus eum
+                commodi soluta distinctio sit repudiandae possimus sunt. Ipsum,
+                rem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------->
+      <!-- PIED-DE-PAGE : CONTACTEZ-MOI -->
+      <!---------------------------------->
+      <!-- <card-model
+        pathPhoto="asset\img-2.jpg"
+        paragraph1="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto
+                consequuntur voluptas, esse doloribus. Perferendis porro
+                quisquam vitae exercitationem aliquid, minus eos laborum
+                repudiandae, cumque debitis iusto omnis praesentium? Laborum
+                placeat sit adipisci illum tempore maxime, esse qui quae?
+                Molestias excepturi corporis similique doloribus"
+        name="Lorem ipsum dolor sit amet"
+        numberOfLines="7"
+        line1="Alpha"
+        line2="Beta"
+        line3="Gamma"
+        line4="Delta"
+        line5="Epsilon"
+        line6="Phi"
+        line7="Kappa"
+        paragraph2="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto
+                consequuntur voluptas, esse doloribus. Perferendis porro
+                quisquam vitae exercitationem aliquid, minus eos laborum
+                repudiandae, cumque debitis iusto omnis praesentium? Laborum
+                placeat sit adipisci illum tempore maxime, esse qui quae?
+                Molestias excepturi corporis similique doloribus"
+        BtnText="Achetez-Moi !"
+      >
+      </card-model> -->
+      <card-model-new
+        pathPhoto="asset\img-2.jpg"
+      ></card-model-new>
+      <h2>Contactez-moi</h2>
+      <div class="footer">
+        <div class="footer__form footer">
+          <form class="footer__form">
+            <div class="footer__form__first">
+              <input type="text" placeholder="Votre Nom..." />
+              <input type="email" placeholder="Votre Email..." />
+            </div>
+            <div class="footer__form__second">
+              <input type="text" placeholder="Votre Message..." />
+            </div>
+          </form>
+        </div>
+        <a href="#" class="footer__button">
+          <button>Envoyez !</button>
+        </a>
+      </div>
+      <hr />
+      <p class="copyright">Copyright 2022 &#xA9; Kiece</p>
+    </div>
+    <p id="demo"></p>
+    <script src="asset\app1.js"></script>
+    <script src="asset\app2.js"></script>
   </body>
 </html>
