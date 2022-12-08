@@ -1,0 +1,29 @@
+      <card-model
+        photoPath="asset/img-1.jpg"
+        paragraph1=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+		      aliquid ad provident aut fuga animi soluta quae eos non cupiditate
+          voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo
+          a iste culpa! Quasi quibusdam hic recusandae delectus velit officiis
+          explicabo voluptatibus! Nemo esse similique, voluptates labore
+          distinctio, placeat explicabo facilis molestias, blanditiis culpa
+          iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa
+          sint ex voluptatum expedita aliquid! Debitis, nam!"
+        name="Bonjour le monde !"
+        numberOfLines="7"
+        1="Omega"
+        2="Alpha"
+        3="Beta"
+        4="Gamma"
+        5="Delta"
+        6="Epsilon"
+        7="Delta"
+        paragraph2=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          aliquid ad provident aut fuga animi soluta quae eos non cupiditate
+          voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo
+          a iste culpa! Quasi quibusdam hic recusandae delectus velit officiis
+          explicabo voluptatibus! Nemo esse similique, voluptates labore
+          distinctio, placeat explicabo facilis molestias, blanditiis culpa
+          iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa
+          sint ex voluptatum expedita aliquid! Debitis, nam!"
+        btntext="Bouton"
+      >
